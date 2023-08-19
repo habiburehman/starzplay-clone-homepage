@@ -9,5 +9,7 @@
 
 .content {
     height: 160px;
-    background-color: #00ff00;
+    display: flex;
+    overflow-x: hidden;
+    gap: 10px;
 }

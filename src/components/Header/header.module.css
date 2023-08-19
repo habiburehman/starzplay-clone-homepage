@@ -1,8 +1,38 @@
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #808080;
+    background-color: #000000;
     height: 80px;
     color: #ffffff;
+    padding: 0px 20px;
+}
+
+.leftSide, .rightSide {
+    width: 50%;
+}
+
+.leftSide {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.rightSide {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menuItem {
+    font-size: 1.2em;
+    align-self: center;
+    cursor: pointer;
+}
+
+.logo {
+    weight: 600;
+    font-size: 1.5em;
+    cursor: pointer;
 }
