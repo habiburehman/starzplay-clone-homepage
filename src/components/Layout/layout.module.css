@@ -1,0 +1,13 @@
+.container {
+    margin: 20px 0px;
+}
+
+.heading {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content {
+    height: 160px;
+    background-color: #00ff00;
+}

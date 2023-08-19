@@ -1,0 +1,11 @@
+.layoutGroup {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.callToAction {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HeroBanner from "./components/HeroBanner";
+import Layout from "./components/Layout";
+import styles from "./App.module.css";
+import Button from "./elements/Button";
 
 function App() {
+  const layoutElements = [
+    "Popular Movies",
+    "Action Movies",
+    "Comedy Movies",
+    "Horror Movies",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <HeroBanner />
+      <div className={styles.layoutGroup}>
+        {layoutElements.map((element) => (
+          <Layout heading={element} key={element} />
+        ))}
+      </div>
+      <div className={styles.callToAction}>
+        <Button value="Explore Movies" />
+      </div>
+      <Footer />
     </div>
   );
 }
