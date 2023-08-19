@@ -9,7 +9,4 @@
 
 .content {
     height: 160px;
-    display: flex;
-    overflow-x: hidden;
-    gap: 10px;
 }

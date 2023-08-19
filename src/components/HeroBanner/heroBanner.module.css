@@ -1,6 +1,4 @@
 .container {
     height: 300px;
-    display: flex;
     color: #ffffff;
-    overflow-x: hidden;
 }
