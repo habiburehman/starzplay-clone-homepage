@@ -16,6 +16,7 @@ export default function Header() {
         <div className={styles.logo}>StarzPlay</div>
         {menuItems.map((menuItem) => (
           <div
+            key={menuItem}
             className={styles.menuItem}
             style={menuItem === "Movies" ? style.active : {}}
           >

@@ -27,10 +27,10 @@ function App() {
                   Loading {layout.title} section
                 </div>
               }
+              key={layout.title}
             >
               <Layout
                 heading={layout.title}
-                key={layout.title}
                 titles={layout.layoutTitles.titles}
               />
             </React.Suspense>

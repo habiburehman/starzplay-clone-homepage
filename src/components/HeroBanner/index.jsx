@@ -23,6 +23,7 @@ export default function HeroBanner() {
         {heroTitles.flatMap((heroTitle) =>
           heroTitle.layoutTitles.titles.map((title) => (
             <img
+              key={title.title}
               src={title.thumbnails["thumb-613x1536"].url}
               alt={title.thumbnails["thumb-613x1536"].title}
             ></img>

@@ -23,6 +23,7 @@ export default function Layout(props) {
         <Slider {...settings}>
           {titles.map((title) => (
             <img
+              key={title.title}
               src={title.thumbnails["thumb-677x474"].url}
               alt={title.thumbnails["thumb-677x474"].title}
               loading="lazy"
