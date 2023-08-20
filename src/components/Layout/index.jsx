@@ -8,13 +8,12 @@ export default function Layout(props) {
   const { heading, titles } = props;
   const settings = {
     slidesToShow: 19,
-    slidesToScroll: 5,
     swipeToSlide: true,
-    infinite: titles.length > 19,
+    infinite: false,
     autoplay: false,
     arrows: false,
     dots: false,
-    centerMode: true,
+    centerMode: false,
     adaptiveHeight: true,
   };
   return (
