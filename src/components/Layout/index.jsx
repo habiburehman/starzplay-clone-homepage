@@ -26,6 +26,7 @@ export default function Layout(props) {
             <img
               src={title.thumbnails["thumb-677x474"].url}
               alt={title.thumbnails["thumb-677x474"].title}
+              loading="lazy"
             ></img>
           ))}
         </Slider>
